@@ -6,7 +6,7 @@ Think of it as **“Postman for makers + Go SDK generator”**: you can explore 
 > This document is written to showcase CryptoForge as a **monetizable, product‑grade developer tool**.
 
 ### MVP demonstration
-Watch in my GoogleDrive (https://drive.google.com/file/d/1lxX1CcM74UWgTPlEe8LTHP5Saig6_rg-/view?usp=sharing)
+Watch in my [GoogleDrive](https://drive.google.com/file/d/1lxX1CcM74UWgTPlEe8LTHP5Saig6_rg-/view?usp=sharing)
 
 ### Why this product matters
 
