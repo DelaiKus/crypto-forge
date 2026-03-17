@@ -5,6 +5,9 @@ Think of it as **“Postman for makers + Go SDK generator”**: you can explore 
 
 > This document is written to showcase CryptoForge as a **monetizable, product‑grade developer tool**.
 
+### MVP demonstration
+Watch in my GoogleDrive(https://drive.google.com/file/d/1lxX1CcM74UWgTPlEe8LTHP5Saig6_rg-/view?usp=sharing)
+
 ### Why this product matters
 
 - **Real problem**: every crypto exchange ships its own REST/WS API, auth scheme and error model.  
@@ -122,5 +125,3 @@ graph LR
 - Designed with **architecture and extensibility** in mind (new exchanges, new languages, new auth schemes).
 - Provides an obvious path to **pricing, packaging and enterprise upsell**.
 
-### MVP demonstration
-https://drive.google.com/file/d/1lxX1CcM74UWgTPlEe8LTHP5Saig6_rg-/view?usp=sharing
