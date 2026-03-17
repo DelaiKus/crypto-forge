@@ -83,7 +83,19 @@ Think of it as **“Postman for makers + Go SDK generator”**: you can explore 
   - Emitters that generate Go code for models, DTOs, client, signer, mapper, errors.
   - File system writer that outputs ready‑to‑use Go modules.
 
-For a more technical architecture doc see `docs/ARCHITECTURE.md`.
+### High-level architecture diagram
+
+```mermaid
+graph LR
+    User["Trader / Engineer"] --> UI["SwiftUI Desktop App\n(App / UI / ViewModels)"]
+    UI --> Domain["Domain Layer\n(API specs, auth, validation)"]
+    Domain --> Data["Data Layer\n(APIClient, RequestBuilder,\nSpecs, Feeds)"]
+    Data --> Adapters["Exchange Adapters\n(Bybit, OKX, Gemini, etc.)"]
+    Data --> Generator["Adapter Generator\n(pipeline, IR, emitters)"]
+    Generator --> GoPkgs["Generated Go SDKs\n(adapters_export/<maker>)"]
+    UI --> IDE["Embedded IDE\n(React + Monaco)"]
+    IDE --> Generator
+```
 
 ### Tech stack
 
