@@ -3,7 +3,7 @@
 **CryptoForge** is a **desktop API explorer and code generator for crypto exchanges**, built as a production‑ready macOS app in SwiftUI.  
 Think of it as **“Postman for makers + Go SDK generator”**: you can explore exchange REST APIs, send real requests, and export a strongly‑typed Go adapter that you can ship or sell.
 
-> This document is written to showcase CryptoForge as a **monetizable, product‑grade developer tool** for a CV / GitHub profile.
+> This document is written to showcase CryptoForge as a **monetizable, product‑grade developer tool**.
 
 ### Why this product matters
 
@@ -25,25 +25,10 @@ Think of it as **“Postman for makers + Go SDK generator”**: you can explore 
 
 ### Monetization angles
 
+- **Basic desktop app**
 - **Pro desktop app**
-  - More supported exchanges and workspaces.
-  - Advanced auth flows, environments, collections, templates.
-  - Cloud backup and sync for teams.
-
 - **Team / enterprise plans**
-  - Seats for trading desks.
-  - Shared workspaces and API profiles.
-  - SSO, audit logs, policy‑driven access to secrets.
-
-- **Managed SDKs**
-  - Hosted, versioned Go packages per exchange.
-  - Automatic regeneration on spec or API changes.
-  - Private artifact registry for each client.
-
-- **Custom integrations**
-  - Private / broker APIs on top of the same generator pipeline.
-  - White‑label adapters and connectors for institutional clients.
-
+    
 ### Core capabilities
 
 - **Unified API explorer**
@@ -112,8 +97,8 @@ For a more technical architecture doc see `docs/ARCHITECTURE.md`.
 ### Typical workflow
 
 1. Launch the CryptoForge macOS app.
-2. Add an exchange profile (**“Add Maker”**) and configure API credentials.
-3. Pick an endpoint from the sidebar and build a request in the Request Builder.
+2. Choose an exchange from the list (**“Add Maker”**).
+3. Pick an endpoint from the sidebar and build a request in the Request Builder (full request is pre-defined, fill the required fields).
 4. Send the request and inspect the response.
 5. Switch to the Adapter Generator, select the same maker and generate a Go adapter.
 6. Open the generated package in the embedded IDE, or consume it from `adapters_export/<maker>/` in your own services.
